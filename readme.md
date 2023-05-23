@@ -2,7 +2,7 @@
 
 This repository is a collection of small Octave scripts that showcase various statistical concepts.
 Here, you'll find a range of Octave scripts covering topics such as probability distributions and hypothesis testing wih simple and (I hope!) clear explanations.
-
+Please note that is a Work In Progress!
 
 ![Octave](https://img.shields.io/badge/OCTAVE-darkblue?style=for-the-badge&logo=octave&logoColor=fcd683)
 
