@@ -13,4 +13,6 @@ In this formula:
 
 In each iteration, θ is updated by subtracting the product of the learning rate α and the gradient. This moves θ towards the minimum, gradually minimizing the cost function J.
 
+In this example code we generate random data, fit a quadratic curve to it using gradient descent, and visualizes the cost history and learning curve.
+
 <!-- Different variants of gradient descent exist, such as batch gradient descent, stochastic gradient descent, and mini-batch gradient descent, which may have slight variations in the update rule. -->

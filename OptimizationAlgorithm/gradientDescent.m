@@ -1,13 +1,13 @@
 function [theta, cost_history] = gradientDescent(X, y, theta, alpha, num_iters)
-    m = length(y); % number of training examples
+    m = length(y);
+    
+    % initialize cost history
     cost_history = zeros(num_iters, 1);
 
     for iter = 1:num_iters
-        h = X * theta; % hypothesis or predicted values
-
-        theta = theta - (alpha/m) * X' * (h - y); % update theta
-        
-        % Save the cost J in every iteration
-        cost_history(iter) = sum((X * theta - y).^2) / (2*m);
+        predictions = X * theta;
+        errors = predictions - y;
+        theta = theta - (alpha / m) * (X' * errors); % update theta
+        cost_history(iter) = computeCost(X, y, theta); % update compute cost
     end
 end
