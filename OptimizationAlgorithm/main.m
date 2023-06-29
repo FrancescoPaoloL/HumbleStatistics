@@ -7,6 +7,10 @@ x = linspace(-5, 5, 100)';
 % Compute corresponding f(x) values
 y = x.^2;
 
+% Add noise to y values
+noise = 10 * randn(size(x)); % Adjust the magnitude of noise as desired
+y = y + noise;
+
 % Add bias term and quadratic term to X
 X = [ones(size(x)) x x.^2];
 
@@ -68,5 +72,3 @@ title('Learning Curve');
 
 % Keep the plot window open until manually closed
 waitfor(gcf);
-
-
